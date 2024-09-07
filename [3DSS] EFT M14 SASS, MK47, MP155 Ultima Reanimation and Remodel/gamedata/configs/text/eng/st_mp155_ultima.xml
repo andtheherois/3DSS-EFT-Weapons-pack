@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+	
+	<string id="st_wpn_mp155_u">
+		<text>MP-155 Ultima</text>
+	</string>
+	<string id="st_wpn_mp155_u_descr">
+		<text>
+		The MP-155 Ultima  designed and manufactured by Kalashnikov Group is a high capacity combat shotgun, designed to provide the user with easy to access information during combat. \n \n
+		%c[ui_gray_3]ATTACHMENTS:\n
+		%c[d_purple] • %c[ui_gray_2] ACOG, Barska ES AC10632, EOTech, Leupold, March, Mark 8 w/ rmr scopes\n
+		</text>
+	</string>
+
+
+</string_table>

@@ -1,0 +1,45 @@
+<w>
+	<display>
+		<background  x = "0" y = "0" width="0.024" height="0.03" stretch="1">
+			<texture shader="hud\p3d">ui_inGame2_white_rect</texture>
+		</background>
+
+
+		<!-- Top panel-->
+		<icons x = "0.014" y = "0.001" width="0.0066" height="0.0024" stretch="1">
+			<texture shader="hud\p3d">ui_ultima_icons</texture>
+		</icons>
+
+		<battery_charge x = "0.01825" y = "0.0018" width="0.0018" height="0.0008" stretch="1" horz="1" min="0" max="1" pos="0">
+			<texture shader="hud\p3d">ui_ultima_battery_charge</texture>
+        </battery_charge>
+
+		<line x = "0.003" y = "0.0035" width="0.018" height="0.0002" stretch="1">
+			<texture shader="hud\p3d">ui_ultima_line</texture>
+		</line>
+
+		<!-- Clock -->
+		<clock_h_1 x = "0.003" y = "0.0009" width="0.00125" height="0.0035" stretch="1">
+			<texture shader="hud\p3d">ultima_0</texture>
+		</clock_h_1>
+		<clock_h_2 x = "0.004" y = "0.0009" width="0.00125" height="0.0035" stretch="1">
+			<texture shader="hud\p3d">ultima_0</texture>
+		</clock_h_2>
+		<colon x = "0.005" y = "0.0009" width="0.00125" height="0.0035" stretch="1">
+			<texture shader="hud\p3d">ultima_colon</texture>
+		</colon>
+		<clock_m_1 x = "0.006" y = "0.0009" width="0.00125" height="0.0035" stretch="1">
+			<texture shader="hud\p3d">ultima_0</texture>
+		</clock_m_1>
+		<clock_m_2 x = "0.007" y = "0.0009" width="0.00125" height="0.0035" stretch="1">
+			<texture shader="hud\p3d">ultima_0</texture>
+		</clock_m_2>
+
+		<!-- Main elements -->
+		<digit_1 x = "0.003" y = "0.006" width="0.009" height="0.0135" stretch = "1"/>
+		<digit_2 x = "0.012" y = "0.006" width="0.009" height="0.0135" stretch = "1"/>
+		<jam x = "0.0075" y = "0.006" width="0.009" height="0.0135" stretch="1">
+			<texture shader="hud\p3d">ui_ultima_jam_big</texture>
+		</jam>
+	</display>
+</w>
