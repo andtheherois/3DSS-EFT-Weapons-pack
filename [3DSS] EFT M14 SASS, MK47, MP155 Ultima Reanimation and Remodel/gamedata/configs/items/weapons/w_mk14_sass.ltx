@@ -71,7 +71,7 @@ upgrade_scheme                           = upgrade_scheme_lr300
 		upgr_icon_width					 = 300
 		upgr_icon_height				 = 100
 
-fire_modes                               = 1, -1
+fire_modes                               = -1, 1
 ammo_class                               = ammo_7.62x51_fmj, ammo_7.62x51_fmj_bad, ammo_7.62x51_fmj_verybad, ammo_7.62x51_ap, ammo_7.62x51_ap_bad, ammo_7.62x51_ap_verybad
 ammo_current                             = 180
 ammo_elapsed                             = 20
@@ -79,7 +79,7 @@ ammo_limit                               = 210
 ammo_mag_size                            = 20
 startup_ammo                             = 90
 
-		scopes							 = ac10632, acog, eot, c-more, mark8_rmr, leupold, marchf, specter, pn23, razorhd, hamr
+		scopes							 = ac10632, acog, eot, c-more, leupold, marchf, specter, pn23, razorhd, hamr, gauss_sight, t12
 scope_status                             = 0
 scope_name                               = wpn_addon_scope_susat
 scope_x                                  = 67
@@ -356,7 +356,26 @@ item_visual                              = anomaly_weapons\wpn_m14_sass\wpn_mk14
         aim_hud_offset_pos_16x9          = -0.111153, 0.003435, -0.01
         aim_hud_offset_rot               = -0.005758, 0.015239, -0.003
         aim_hud_offset_rot_16x9          = -0.005758, 0.015239, -0.003
-		
+;------------------------------------------------------------------------------------------------
+[wpn_mk14_sass_t12]:wpn_mk14_sass
+hud                                      = wpn_mk14_sass_t12_hud
+
+inv_weight                               = 5.4
+
+1icon_layer                              = t12
+1icon_layer_x                            = 85
+1icon_layer_y                            = -4
+
+		visual							 = dynamics\weapons\wpn_m14_sass\wpn_mk14_eot.ogf
+
+[wpn_mk14_sass_t12_hud]:wpn_mk14_sass_hud
+item_visual                              = anomaly_weapons\wpn_m14_sass\wpn_mk14_t12_hud.ogf
+
+        aim_hud_offset_pos               = -0.109417, 0.015245, -0.061689
+        aim_hud_offset_pos_16x9          = -0.109417, 0.015245, -0.061689
+        aim_hud_offset_rot               = 0.001623, 0.010928, -0.003
+        aim_hud_offset_rot_16x9          = 0.001623, 0.010928, -0.003
+				
 ;-----------------------------------------------------------------------------------------------------
 ;------------------------------------------------SCOPES-----------------------------------------------
 ;-----------------------------------------------------------------------------------------------------
@@ -381,10 +400,10 @@ zoom_rotate_time                         = 0.3
 [wpn_mk14_sass_acog_hud]:wpn_mk14_sass_ac10632_hud,hud_low_interia
 item_visual                              = anomaly_weapons\wpn_m14_sass\wpn_mk14_acog_hud.ogf
 
-        aim_hud_offset_pos               = -0.109977, 0.011085, -0.103879
-        aim_hud_offset_pos_16x9          = -0.109977, 0.011085, -0.103879
-        aim_hud_offset_rot               = 0.0069, 0.011503, 0
-        aim_hud_offset_rot_16x9          = 0.0069, 0.011503, 0
+        aim_hud_offset_pos               = -0.110003, 0.011085, -0.098482
+        aim_hud_offset_pos_16x9          = -0.110003, 0.011085, -0.098482
+        aim_hud_offset_rot               = 0.006918, 0.011187, 0
+        aim_hud_offset_rot_16x9          = 0.006918, 0.011187, 0
 
         aim_hud_offset_alt_pos           = -0.157183, -0.061291, -0.03
         aim_hud_offset_alt_pos_16x9      = -0.157183, -0.061291, -0.03
@@ -407,10 +426,10 @@ scope_dynamic_zoom                                 = on
 
 [wpn_mk14_sass_specter_hud]:wpn_mk14_sass_hud
 item_visual                              = anomaly_weapons\wpn_m14_sass\wpn_mk14_specter_hud.ogf
-        aim_hud_offset_pos               = -0.109352, 0.009365, -0.123445
-        aim_hud_offset_pos_16x9          = -0.109352, 0.009365, -0.123445
-        aim_hud_offset_rot               = -0.000104, 0.011201, 0
-        aim_hud_offset_rot_16x9          = -0.000104, 0.011201, 0
+        aim_hud_offset_pos               = -0.10943, 0.009383, -0.127122
+        aim_hud_offset_pos_16x9          = -0.10943, 0.009383, -0.127122
+        aim_hud_offset_rot               = 0.000112, 0.011292, 0
+        aim_hud_offset_rot_16x9          = 0.000112, 0.011292, 0
 	
 ;-----------------------------------------------------------------------------------------------------
 [wpn_mk14_sass_leupold]:wpn_mk14_sass
@@ -432,11 +451,10 @@ inv_weight                               = 5.78
 [wpn_mk14_sass_leupold_hud]:wpn_mk14_sass_hud
 		item_visual						 = anomaly_weapons\wpn_m14_sass\wpn_mk14_leupold_hud.ogf
 
-        aim_hud_offset_pos               = -0.109773, 0.008211, -0.073682
-        aim_hud_offset_pos_16x9          = -0.109773, 0.008211, -0.073682
-        aim_hud_offset_rot               = 0.000363, 0.011066, 0
-        aim_hud_offset_rot_16x9          = 0.000363, 0.011066, 0
-
+        aim_hud_offset_pos               = -0.109773, 0.008211, -0.071833
+        aim_hud_offset_pos_16x9          = -0.109773, 0.008211, -0.071833
+        aim_hud_offset_rot               = -0.000122, 0.01112, 0
+        aim_hud_offset_rot_16x9          = -0.000122, 0.01112, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_mk14_sass_mark8_rmr]:wpn_mk14_sass
 		hud								 = wpn_mk14_sass_mark8_rmr_hud
@@ -456,10 +474,10 @@ inv_weight                               = 6.145
 [wpn_mk14_sass_mark8_rmr_hud]:wpn_mk14_sass_hud
 		item_visual						 = anomaly_weapons\wpn_m14_sass\wpn_mk14_mark8_rmr_hud.ogf
 		
-        aim_hud_offset_pos               = -0.109773, 0.008211, -0.073682
-        aim_hud_offset_pos_16x9          = -0.109773, 0.008211, -0.073682
-        aim_hud_offset_rot               = 0.000363, 0.011066, 0
-        aim_hud_offset_rot_16x9          = 0.000363, 0.011066, 0
+        aim_hud_offset_pos               = -0.109773, 0.008211, -0.071833
+        aim_hud_offset_pos_16x9          = -0.109773, 0.008211, -0.071833
+        aim_hud_offset_rot               = -0.000122, 0.01112, 0
+        aim_hud_offset_rot_16x9          = -0.000122, 0.01112, 0
 		
         aim_hud_offset_alt_pos           = -0.128774, -0.085566, -0.082992
         aim_hud_offset_alt_pos_16x9      = -0.128774, -0.085566, -0.082992
@@ -487,10 +505,10 @@ inv_weight                               = 5.74
 [wpn_mk14_sass_marchf_hud]:wpn_mk14_sass_hud
 		item_visual						 = anomaly_weapons\wpn_m14_sass\wpn_mk14_march_hud.ogf
 
-        aim_hud_offset_pos               = -0.109634, 0.008477, -0.071079
-        aim_hud_offset_pos_16x9          = -0.109634, 0.008477, -0.071079
-        aim_hud_offset_rot               = -0.000131, 0.011459, 0
-        aim_hud_offset_rot_16x9          = -0.000131, 0.011459, 0
+        aim_hud_offset_pos               = -0.109687, 0.008532, -0.07044
+        aim_hud_offset_pos_16x9          = -0.109687, 0.008532, -0.07044
+        aim_hud_offset_rot               = -0.000131, 0.011779, 0
+        aim_hud_offset_rot_16x9          = -0.000131, 0.011779, 0
 		
 ;-----------------------------------------------------------------------------------------------------		
 [wpn_mk14_sass_pn23]:wpn_mk14_sass
@@ -510,10 +528,10 @@ nv_scope_status 				 = 0
 [wpn_mk14_sass_pn23_hud]:wpn_mk14_sass_hud
 item_visual                              = anomaly_weapons\wpn_m14_sass\wpn_mk14_pn23_hud.ogf
 
-        aim_hud_offset_pos               = -0.109634, 0.008477, -0.071079
-        aim_hud_offset_pos_16x9          = -0.109634, 0.008477, -0.071079
-        aim_hud_offset_rot               = -0.000131, 0.011459, 0
-        aim_hud_offset_rot_16x9          = -0.000131, 0.011459, 0
+        aim_hud_offset_pos               = -0.109805, -0.003725, -0.09063
+        aim_hud_offset_pos_16x9          = -0.109805, -0.003725, -0.09063
+        aim_hud_offset_rot               = -0.000559, 0.011029, 0
+        aim_hud_offset_rot_16x9          = -0.000559, 0.011029, 0
 		
 ;-----------------------------------------------------------------------------------------------------
 [wpn_mk14_sass_hamr]:wpn_mk14_sass
@@ -535,13 +553,13 @@ scope_dynamic_zoom		                           = off
 [wpn_mk14_sass_hamr_hud]:wpn_mk14_sass_hud
 item_visual                              = anomaly_weapons\wpn_m14_sass\wpn_mk14_hamr_hud.ogf
 
-        aim_hud_offset_alt_pos           = -0.111252, -0.034493, -0.076462
-        aim_hud_offset_alt_pos_16x9      = -0.111252, -0.034493, -0.076462
+        aim_hud_offset_alt_pos           = -0.111252, -0.034493, -0.082622
+        aim_hud_offset_alt_pos_16x9      = -0.111252, -0.034493, -0.082622
         aim_hud_offset_alt_rot           = -0.011244, 0.015126, 0
         aim_hud_offset_alt_rot_16x9      = -0.011244, 0.015126, 0
 		
-        aim_hud_offset_pos               = -0.110093, 0.006993, -0.076462
-        aim_hud_offset_pos_16x9          = -0.110093, 0.006993, -0.076462
+        aim_hud_offset_pos               = -0.11008, 0.007047, -0.082622
+        aim_hud_offset_pos_16x9          = -0.11008, 0.007047, -0.082622
         aim_hud_offset_rot               = -0.000738, 0.010664, 0
         aim_hud_offset_rot_16x9          = -0.000738, 0.010664, 0
 		
@@ -553,7 +571,7 @@ inv_weight			= 5.3
 hud				= wpn_mk14_sass_razorhd_hud
 
 1icon_layer			    = razorhd
-1icon_layer_x			= 52;
+1icon_layer_x			= 52
 1icon_layer_y			= -7
 
 
@@ -564,7 +582,30 @@ scope_dynamic_zoom		                           = on
 
 [wpn_mk14_sass_razorhd_hud]:wpn_mk14_sass_hud
 item_visual                              = anomaly_weapons\wpn_m14_sass\wpn_mk14_vortex_hud.ogf
-        aim_hud_offset_pos               = -0.110195, 0.010256, -0.035266
-        aim_hud_offset_pos_16x9          = -0.110195, 0.010256, -0.035266
-        aim_hud_offset_rot               = 6.2e-05, 0.011886, 0
-        aim_hud_offset_rot_16x9          = 6.2e-05, 0.011886, 0	
+        aim_hud_offset_pos               = -0.110195, 0.010256, -0.034347
+        aim_hud_offset_pos_16x9          = -0.110195, 0.010256, -0.034347
+        aim_hud_offset_rot               = -0.000244, 0.011834, 0
+        aim_hud_offset_rot_16x9          = -0.000244, 0.011834, 0
+;-----------------------------------------------------------------------------------------------------
+[wpn_mk14_sass_gauss_sight]:wpn_mk14_sass
+
+inv_weight			= 5.3
+
+hud				= wpn_mk14_sass_gauss_sight_hud
+
+1icon_layer			    = gauss_sight
+1icon_layer_x			= 52
+1icon_layer_y			= 4
+
+
+scope_status                                       = 1
+        scope_zoom_factor                = 12
+zoom_rotate_time		                           = 0.25
+scope_dynamic_zoom		                           = on
+
+[wpn_mk14_sass_gauss_sight_hud]:wpn_mk14_sass_hud
+item_visual                              = anomaly_weapons\wpn_m14_sass\wpn_mk14_gauss_hud.ogf
+        aim_hud_offset_pos               = -0.10992, 0.012339, -0.102609
+        aim_hud_offset_pos_16x9          = -0.10992, 0.012339, -0.102609
+        aim_hud_offset_rot               = 0.00013, 0.011316, 0
+        aim_hud_offset_rot_16x9          = 0.00013, 0.011316, 0		
