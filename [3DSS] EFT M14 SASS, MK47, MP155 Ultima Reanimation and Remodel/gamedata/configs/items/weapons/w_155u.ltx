@@ -80,7 +80,7 @@
         scope_status                = 0
         scope_zoom_factor           = 0
         
-		scopes							 = acog, eot, ac10632, c-more, specter, t12, monstrum, trihawk
+		scopes							 = acog, eot, ac10632, c-more, specter, t12, monstrum, trihawk, vulcan, tac30
        
         grenade_launcher_status     = 0
         
@@ -561,5 +561,50 @@ item_visual						= anomaly_weapons\wpn_mp155_u\wpn_mp155_ultima_trihawk_hud.ogf
         aim_hud_offset_pos_16x9          = -0.072722, 0.011151, -0.113816
         aim_hud_offset_rot               = 0.011594, 0.005756, -0.007764
         aim_hud_offset_rot_16x9          = 0.011594, 0.005756, -0.007764
-
+	
 ;----------------------------------------------------------------	
+[wpn_mp155_u_vulcan]:wpn_mp155_u
+visual                                   = dynamics\weapons\wpn_mp155_u\wpn_mp155_ultima_acog.ogf
+hud							= wpn_mp155_u_vulcan_hud
+
+1icon_layer					= vulcan
+1icon_layer_x				= 108
+1icon_layer_y				= -3
+
+inv_weight					= 4.65
+
+scope_status				= 1
+scope_zoom_factor			= 35
+zoom_rotate_time			= 0.25
+use_alt_aim_hud				= true
+
+[wpn_mp155_u_vulcan_hud]:wpn_mp155_u_hud
+item_visual						= anomaly_weapons\wpn_mp155_u\wpn_mp155_ultima_vulcan_hud.ogf
+        aim_hud_offset_pos               = -0.072776, 0.014859, -0.11803
+        aim_hud_offset_pos_16x9          = -0.072776, 0.014859, -0.11803
+        aim_hud_offset_rot               = 0.011594, 0.005756, -0.007764
+        aim_hud_offset_rot_16x9          = 0.011594, 0.005756, -0.007764
+
+;----------------------------------------------------------------		
+[wpn_mp155_u_tac30]:wpn_mp155_u
+visual                                   = dynamics\weapons\wpn_mp155_u\wpn_mp155_ultima_acog.ogf
+hud							= wpn_mp155_u_tac30_hud
+
+1icon_layer					= tac30
+1icon_layer_x				= 112
+1icon_layer_y				= -8
+
+inv_weight					= 4.50
+
+scope_status				= 1
+scope_zoom_factor			= 30
+zoom_rotate_time			= 0.25
+use_alt_aim_hud				= true
+scope_dynamic_zoom			= on
+
+[wpn_mp155_u_tac30_hud]:wpn_mp155_u_hud
+item_visual						= anomaly_weapons\wpn_mp155_u\wpn_mp155_ultima_tac30_hud.ogf
+        aim_hud_offset_pos               = -0.072987, 0.011861, -0.108276
+        aim_hud_offset_pos_16x9          = -0.072987, 0.011861, -0.108276
+        aim_hud_offset_rot               = 0.011594, 0.007034, -0.007764
+        aim_hud_offset_rot_16x9          = 0.011594, 0.007034, -0.007764
